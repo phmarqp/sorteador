@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+
+body {
+    width: 100vw;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.sortear {
+    display: block;
+}
