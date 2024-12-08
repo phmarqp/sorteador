@@ -26,11 +26,11 @@ function generateNumber() {
       const result = Math.floor(Math.random() * (max - min + 1) + min);
 
       // Atualizando o conteúdo do resultado no modal
-      document.querySelector("#number-lucky").textContent = `O número sorteado é: ${result}`;
+      document.querySelector("#number-lucky").textContent = `O número sorteado é:${result}`;
 
       // Escondendo o loader e mostrando o número sorteado
       document.querySelector(".loader").style.display = "none"; // Esconde o loader
-  }, 2500); // 2000ms = 2 segundos, você pode ajustar esse tempo conforme necessário
+  }, 2500); // 2000ms = 2 segundos, você pode ajustar esse tempo de loader
 }
 
 function closeModal() {

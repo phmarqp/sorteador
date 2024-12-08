@@ -7,20 +7,18 @@
 }
 
 body {
-    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-    width: 100vw;
+    background-image: linear-gradient(to right top, #182848, #21345b, #2a4070, #334d85, #3d5a9a, #3d5a9a, #3d5a9a, #3d5a9a, #334d85, #2a4070, #21345b, #182848);
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    min-width: 100vh;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 
 input {
     padding: 2px;
@@ -32,7 +30,7 @@ input {
     background-color: #ffff;
     border: solid 1px #223963;
     border-radius: 10px;
-    margin-left: 20px;
+    margin: 10px;
 }
 
 label {
@@ -50,7 +48,7 @@ img {
     flex-direction: column;
     width: 300px;
     height: 300px;
-    margin: 90px auto 0 auto;   
+    margin: 60px auto 0 auto;   
 }
 
 h1{
@@ -62,16 +60,42 @@ h1{
     margin: 60px 0 24px 0;
 }
 
-button {
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    background-color: #283f66;
-    border:solid 2px #223963 ;
-    color: #ffff;
-    padding: 8px 40px;
-    margin-top: 30px;
+h2 {
+    margin-top: 0px;
 }
+
+button {
+  background-color: #283f66;
+  border-radius: 8px;
+  border:solid 2px #25395e ;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 30px auto 0 auto;
+  outline: none;
+  padding: 8px 40px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover,button:focus {
+  background-color: #314870;
+  font-size: 14px;
+  padding: 8px 42px;
+}
+
 
 .modal {
     display: none;
@@ -104,8 +128,7 @@ button {
     right: 25px;
 }
   
-.close:hover,
-.close:focus {
+.close:hover,.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -121,8 +144,9 @@ button {
     margin: 20px auto; /* Centraliza o loader */
 }
 
-/* Animação de rotação */
+/* Animação do loader */
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
